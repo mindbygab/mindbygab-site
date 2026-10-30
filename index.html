@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MIND by GAB — Tech Studio for Apps, Software & Web | Miami</title>
+  <meta name="description" content="MIND by GAB is a Miami tech studio that turns ideas into apps, software and websites. UX/UI, mobile app development, MVPs for startups, AI and branding. Creators of Pulse and HitBeatRun.">
+  <meta property="og:title" content="MIND by GAB — We turn your ideas into reality">
+  <meta property="og:description" content="Miami tech studio: mobile apps, software, websites, UX/UI and MVPs for startups.">
+  <meta property="og:image" content="assets/img/logo-mind.png">
+  <meta name="theme-color" content="#07060d">
+  <link rel="icon" href="assets/img/logo-mind.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="loading">
+
+  <!-- preloader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img class="loader-logo" src="assets/img/logo-mind.png" alt="MIND by GAB">
+      <div class="loader-count"><span id="loadNum">0</span>%</div>
+      <div class="loader-bar"><span id="loadBar"></span></div>
+    </div>
+  </div>
+  <div class="loader-curtain" id="curtain"></div>
+
+  <div class="cursor" id="cursor"><span></span></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="progress" id="progress"></div>
+  <div class="noise"></div>
+
+  <!-- nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo" aria-label="MIND by GAB home"><img src="assets/img/logo-mind.png" alt="MIND by GAB"></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+      <a href="#start">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#start" class="btn btn-primary btn-sm magnetic">Start a project <span class="arrow">→</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#about">About</a>
+    <a href="#book">Book</a>
+    <a href="#start">Contact</a>
+    <div class="mm-foot">Miami, FL · mindbygab@gmail.com · 786-681-7182</div>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas id="neural" aria-hidden="true"></canvas>
+      <div class="hero-glow g1"></div>
+      <div class="hero-glow g2"></div>
+      <div class="wrap">
+        <div class="hero-top">
+          <span class="eyebrow">Tech Studio · Miami, FL · Since 2013</span>
+          <a href="#book" class="book-badge" data-cursor="Read">
+            <img src="assets/img/tech-warrior.jpg" alt="">
+            <span><small>New book by Gabriela</small><b>Tech Warrior</b></span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+        <h1 class="h-xl" id="heroTitle">
+          <span class="line"><span>We turn</span></span>
+          <span class="line"><span><em class="grad-text">your ideas</em></span></span>
+          <span class="line"><span>into <em class="outline">reality.</em></span></span>
+        </h1>
+        <p class="hero-sub">We design and develop your <span class="rotator"><span class="rotator-word" id="rotator">mobile app</span></span><br>— <b>fast and budget-friendly.</b></p>
+        <div class="hero-bottom">
+          <div class="hero-proof"><span>Free first consultation</span><span>MVPs in weeks, not months</span><span>Clear, fixed quotes</span></div>
+          <div class="hero-ctas">
+            <a href="#start" class="btn btn-primary magnetic" data-cursor="Let's go">Get a free quote <span class="arrow">→</span></a>
+            <a href="#projects" class="btn btn-ghost magnetic">See our projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint"><i></i>SCROLL</div>
+      <div class="hero-hint">✦ move &amp; click — the network reacts</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item">Mobile Apps <span class="star"></span></div>
+        <div class="marquee-item">UX / UI Design <span class="star"></span></div>
+        <div class="marquee-item">Software <span class="star"></span></div>
+        <div class="marquee-item">Websites <span class="star"></span></div>
+        <div class="marquee-item">MVP for Startups <span class="star"></span></div>
+        <div class="marquee-item">AI Products <span class="star"></span></div>
+        <div class="marquee-item">Branding <span class="star"></span></div>
+        <div class="marquee-item">3D &amp; Motion <span class="star"></span></div>
+        <div class="marquee-item">Mobile Apps <span class="star"></span></div>
+        <div class="marquee-item">UX / UI Design <span class="star"></span></div>
+        <div class="marquee-item">Software <span class="star"></span></div>
+        <div class="marquee-item">Websites <span class="star"></span></div>
+        <div class="marquee-item">MVP for Startups <span class="star"></span></div>
+        <div class="marquee-item">AI Products <span class="star"></span></div>
+        <div class="marquee-item">Branding <span class="star"></span></div>
+        <div class="marquee-item">3D &amp; Motion <span class="star"></span></div>
+      </div>
+    </div>
+
+    <!-- MANIFESTO -->
+    <section class="section" id="manifesto">
+      <div class="wrap">
+        <div class="manifesto-grid">
+          <div class="manifesto-side reveal">
+            <span class="eyebrow">Who we are</span>
+            <p>MIND by GAB is a technology studio focused on project management for software and app development, providing bespoke UX design solutions to brands in many industries.</p>
+            <a href="#about" class="btn btn-ghost btn-sm magnetic">About MIND <span class="arrow">→</span></a>
+          </div>
+          <p class="manifesto-text" id="manifestoText">Not just another tech studio. Our analysts, UX designers and developers do the critical research behind every product, then design and build it with a cohesive strategy, so you become a product-driven company that grows.</p>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><div class="stat-num"><span data-count="2013" data-plain>2013</span></div><div class="stat-label">Building software &amp; apps since</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="13">13</span>+</div><div class="stat-label">Years of design &amp; engineering</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="1500">1500</span>+</div><div class="stat-label">Runners training with HitBeatRun</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="7">7</span></div><div class="stat-label">Industries: fintech, fitness, edtech, food, social, marine, wellbeing</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY: FAST + BUDGET-FRIENDLY -->
+    <section class="section" id="why" style="padding-top:0">
+      <div class="wrap">
+        <span class="eyebrow reveal">Why MIND by GAB</span>
+        <h2 class="h-lg reveal" style="margin-top:14px">Your app, built <span class="grad-text">fast</span><br>and <span class="grad-text">on budget.</span></h2>
+        <p class="lead reveal" style="margin-top:20px">Big-agency quality without the big-agency price tag. We keep costs low and speed high, so you launch sooner and spend less.</p>
+        <div class="why-grid">
+          <div class="why-card reveal"><div class="why-ic">⚡</div><h3>Fast delivery</h3><p>A clickable prototype in days and an MVP in weeks, not months. Weekly demos so you always see real progress.</p></div>
+          <div class="why-card reveal"><div class="why-ic">💰</div><h3>Budget-friendly</h3><p>Start with an MVP that fits your budget, then grow. Clear, fixed quotes with no surprise invoices.</p></div>
+          <div class="why-card reveal"><div class="why-ic">🧩</div><h3>Proven building blocks</h3><p>Logins, subscriptions, payments and notifications are already built and tested in our own apps, so you don't pay to reinvent them.</p></div>
+          <div class="why-card reveal"><div class="why-ic">🤝</div><h3>One team, start to finish</h3><p>Strategy, design, engineering and launch in one place. No juggling freelancers, no lost hand-offs.</p></div>
+        </div>
+        <div class="compare reveal">
+          <div class="ch"></div><div class="ch">Typical agency</div><div class="ch us">MIND by GAB</div>
+          <div>First prototype</div><div class="no">After months of meetings</div><div class="us yes">In days</div>
+          <div>Pricing</div><div class="no">Hourly, open-ended</div><div class="us yes">Clear fixed quote</div>
+          <div>Progress</div><div class="no">Monthly reports</div><div class="us yes">Weekly live demos</div>
+          <div>Your team</div><div class="no">Account managers</div><div class="us yes">Direct line to the engineers</div>
+          <div>After launch</div><div class="no">Extra contract</div><div class="us yes">Launch &amp; growth support</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS INTRO -->
+    <section class="section" id="projects" style="padding-bottom:0">
+      <div class="wrap">
+        <span class="eyebrow reveal">Projects</span>
+        <h2 class="h-lg reveal" style="margin-top:14px">Products we've <span class="grad-text">designed, built<br>and launched.</span></h2>
+        <p class="lead reveal" style="margin-top:20px">Two of our own apps first, then work for clients in fintech, fitness, education, food and marine.</p>
+      </div>
+    </section>
+
+    <!-- PULSE -->
+    <section class="product" id="pulse">
+      <div class="wrap product-grid">
+        <div class="product-copy">
+          <div class="product-head reveal">
+            <img src="assets/img/pulse-logo.png" alt="Pulse app icon">
+            <div><span class="eyebrow">Featured · iOS app · 2026</span></div>
+          </div>
+          <h2 class="h-lg reveal">Pulse.<br><span class="grad-text">Love, in one hold.</span></h2>
+          <p class="lead reveal">Sometimes love sounds like silence. Pulse lets you send a private signal, a gentle timeout when emotions run high or a quiet reminder that someone is on your mind. Built for the relationships that matter most.</p>
+          <div class="product-meta reveal">
+            <span class="chip">Product strategy</span><span class="chip">UX/UI</span><span class="chip">iOS · Swift</span><span class="chip">Firebase</span><span class="chip">StoreKit subscriptions</span><span class="chip">Motion</span>
+          </div>
+          <ul class="feature-list reveal">
+            <li><span class="ic">💜</span><div><b>Hold to send.</b> One gesture delivers a signal as a notification, even when their phone is locked.</div></li>
+            <li><span class="ic">🔗</span><div><b>Private pairing.</b> 6-digit invitation codes carried inside a share link that auto-fills on install.</div></li>
+            <li><span class="ic">🎨</span><div><b>Personal signals.</b> Custom messages, emoji and colors for the moments that are hard to say out loud.</div></li>
+            <li><span class="ic">⭐</span><div><b>Freemium model.</b> 30-screen onboarding-to-premium flow designed for conversion.</div></li>
+          </ul>
+          <a href="#start" class="btn btn-primary magnetic reveal" data-preset="app">Build an app like this <span class="arrow">→</span></a>
+        </div>
+
+        <div class="pulse-stage" id="pulseStage">
+          <div class="float-shot s1" data-depth="40"><video src="assets/video/pulse-film.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="float-shot s2" data-depth="-30"><img src="assets/img/pulse-how.jpg" alt="Pulse how it works screen" loading="lazy"></div>
+          <div class="try-badge">👆 Try it: press &amp; hold</div>
+          <div class="phone" id="pulsePhone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="pu-toast" id="puToast"><span style="font-size:22px">💜</span><div><b>Signal sent to Jake</b><span id="puToastText">“Thinking of you” delivered</span></div></div>
+              <div class="pulse-ui">
+                <div class="pu-top">
+                  <div><div class="pu-hi">Good evening,</div><div class="pu-name">Gabriela</div></div>
+                  <div class="pu-av">G</div>
+                </div>
+                <div class="pu-to">
+                  <div class="pu-av">J</div>
+                  <div><b>Jake</b><small>Partner</small></div>
+                  <span class="dot">Connected</span>
+                </div>
+                <div class="pu-signals" id="puSignals">
+                  <button class="pu-sig sel" data-e="💭" data-t="Thinking of you"><span class="e">💭</span>Thinking of you</button>
+                  <button class="pu-sig" data-e="🫶" data-t="I need a moment"><span class="e">🫶</span>Need a moment</button>
+                  <button class="pu-sig" data-e="🌙" data-t="Speak softly"><span class="e">🌙</span>Speak softly</button>
+                </div>
+                <div class="pu-orb-wrap">
+                  <span class="pu-wave"></span><span class="pu-wave"></span><span class="pu-wave"></span>
+                  <div class="pu-orb" id="puOrb">
+                    <svg class="pu-ring" viewBox="0 0 178 178"><circle cx="89" cy="89" r="85"/></svg>
+                    <div><span class="e" id="puOrbE">💭</span><span id="puOrbT">Hold to send</span></div>
+                  </div>
+                </div>
+                <div class="pu-hint">Hold to send · tap a signal to change it</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HITBEATRUN -->
+    <section class="product" id="hitbeatrun">
+      <div class="wrap product-grid">
+        <div class="beat-lab reveal" id="beatLab">
+          <div class="beat-lab-top">
+            <span class="eyebrow">HitBeatRun algorithm · live demo</span>
+            <span class="chip" id="beatState">Press play 🔊</span>
+          </div>
+          <div class="beat-viz"><canvas id="beatCanvas"></canvas></div>
+          <div class="beat-readouts">
+            <div class="readout"><small>Tempo</small><div><span id="bpmOut">128</span><span style="font-size:14px;color:var(--muted)"> BPM</span></div></div>
+            <div class="readout"><small>Speed</small><div><span id="mphOut">6.0</span><span style="font-size:14px;color:var(--muted)"> mph</span></div></div>
+            <div class="readout"><small>Cue</small><div class="lvl" id="lvlOut">MEDIUM</div></div>
+          </div>
+          <div class="speed-ramp" id="ramp"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="beat-controls">
+            <button class="beat-play" id="beatPlay" aria-label="Play beat">▶</button>
+            <input type="range" id="bpmRange" min="100" max="180" value="128" aria-label="Tempo in BPM">
+          </div>
+        </div>
+
+        <div class="product-copy">
+          <div class="product-head reveal">
+            <img src="assets/img/hero-logo.png" alt="HitBeatRun logo" style="background:#000;object-fit:contain">
+            <div><span class="eyebrow">Featured · Fitness tech · AI</span></div>
+          </div>
+          <h2 class="h-lg reveal">HitBeatRun.<br><span class="grad-text">Run to the beat.</span></h2>
+          <p class="lead reveal">A running system built on the BPM and energy of music. Our algorithm analyzes every song and times your speed changes to each build-up and drop, so the music literally drives your workout.</p>
+          <div class="product-meta reveal">
+            <span class="chip">R&amp;D</span><span class="chip">Audio AI · BPM detection</span><span class="chip">Python</span><span class="chip">UX/UI</span><span class="chip">Video production</span><span class="chip">Subscription site</span>
+          </div>
+          <ul class="feature-list reveal">
+            <li><span class="ic">🧠</span><div><b>Neural tempo detection.</b> A CNN model reads live BPM while an energy analyzer maps each section to a speed level.</div></li>
+            <li><span class="ic">🏃</span><div><b>Guided run-along videos.</b> Low, medium and max cues timed to the music, on the treadmill or outdoors.</div></li>
+            <li><span class="ic">💳</span><div><b>Membership business.</b> Monthly subscription with 1,500+ students and new songs added regularly.</div></li>
+          </ul>
+          <div class="hero-ctas reveal">
+            <a href="https://hitbeatrun.com" target="_blank" rel="noopener" class="btn btn-ghost magnetic">Visit hitbeatrun.com ↗</a>
+            <a href="#start" class="btn btn-primary magnetic" data-preset="ai">Build with AI <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="work-head">
+          <div>
+            <span class="eyebrow reveal">All projects</span>
+            <h2 class="h-lg reveal" style="margin-top:14px">More apps<br><span class="grad-text">we've shipped.</span></h2>
+          </div>
+          <div class="filters reveal" id="filters">
+            <button class="filter active" data-f="all">All</button>
+            <button class="filter" data-f="app">Mobile apps</button>
+            <button class="filter" data-f="web">Web &amp; software</button>
+            <button class="filter" data-f="ai">AI &amp; data</button>
+          </div>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+          <article class="card feature reveal" data-id="pulse" data-cat="app" data-cursor="Open">
+            <span class="card-new">New</span>
+            <div class="card-media"><video src="assets/video/pulse-film.mp4" muted loop playsinline preload="metadata" poster="assets/img/pulse-intro.jpg" style="object-position:center 35%"></video></div>
+            <div class="card-glare"></div>
+            <div class="card-body"><span class="card-year">2026 · iOS</span><h3>Pulse</h3><p>Private signals for the relationships that matter most.</p><div class="card-tags"><span>Product</span><span>UX/UI</span><span>iOS</span></div></div>
+          </article>
+          <article class="card reveal" data-id="hitbeatrun" data-cat="app ai" data-cursor="Open">
+            <div class="card-media"><img src="assets/img/p-hbr.jpg" alt="HitBeatRun app" loading="lazy"></div>
+            <div class="card-glare"></div>
+            <div class="card-body"><span class="card-year">2021 → today</span><h3>HitBeatRun</h3><p>BPM-driven cardio system and membership.</p><div class="card-tags"><span>AI</span><span>Mobile</span><span>R&amp;D</span></div></div>
+          </article>
+          <article class="card reveal" data-id="bafu" data-cat="app ai" data-cursor="Open">
+            <div class="card-media"><img src="assets/img/p-bafu.jpg" alt="BAFU fintech app" loading="lazy"></div>
+            <div class="card-glare"></div>
+            <div class="card-body"><span class="card-year">2022 · Fintech</span><h3>BAFU</h3><p>AI digital banking that predicts life events.</p><div class="card-tags"><span>Fintech</span><span>AI</span><span>UX/UI</span></div></div>
+          </article>
+          <article class="card reveal" data-id="vice" data-cat="web" data-cursor="Open">
+            <div class="card-media"><img src="assets/img/p-vice.jpg" alt="Vice Boat Club" loading="lazy"></div>
+            <div class="card-glare"></div>
+            <div class="card-body"><span class="card-year">2022 · Marine</span><h3>Vice Boat Club</h3><p>Website + fleet management software.</p><div class="card-tags"><span>Web</span><span>Cloud</span><span>SEO</span></div></div>
+          </article>
+          <article class="card reveal" data-id="homestudy" data-cat="app" data-cursor="Open">
+            <div class="card-media"><img src="assets/img/p-homestudy.jpg" alt="Homestudy app" loading="lazy"></div>
+            <div class="card-glare"></div>
+            <div class="card-body"><span class="card-year">2021 · Edtech</span><h3>Homestudy</h3><p>Gamified study plans for kids.</p><div class="card-tags"><span>Mobile</span><span>UX/UI</span></div></div>
+          </article>
+          <article class="card reveal" data-id="food2go" data-cat="app" data-cursor="Open">
+            <div class="card-media"><img src="assets/img/p-food2go.jpg" alt="Food2Go app" loading="lazy"></div>
+            <div class="card-glare"></div>
+            <div class="card-body"><span class="card-year">2019 · Food</span><h3>Food2Go</h3><p>Miami's network of healthy meal plans.</p><div class="card-tags"><span>Mobile</span><span>Branding</span></div></div>
+          </article>
+          <article class="card reveal" data-id="spinu" data-cat="app web" data-cursor="Open">
+            <div class="card-media"><img src="assets/img/p-spinu.jpg" alt="SpinU social app" loading="lazy"></div>
+            <div class="card-glare"></div>
+            <div class="card-body"><span class="card-year">2017 · Social</span><h3>SpinU</h3><p>Trash likes. Spin your life.</p><div class="card-tags"><span>Concept</span><span>Web</span><span>Marketing</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" style="padding-top:0">
+      <div class="wrap">
+        <span class="eyebrow reveal">What we do</span>
+        <h2 class="h-lg reveal" style="margin-top:14px">Everything your product<br>needs to <span class="grad-text">win.</span></h2>
+        <div class="services-list" id="services-list">
+          <div class="svc open">
+            <button class="svc-row"><span class="svc-num">01</span><span class="svc-title">Mobile Apps &amp; Software</span><span class="svc-plus">+</span></button>
+            <div class="svc-panel"><div><div class="svc-inner"><span></span>
+              <p>Our developers build high-performance apps that are engaging and monetize. We don't just develop your app, we strategize your entire product lifecycle for long-term growth. Native and cross-platform apps with thousands of installs.</p>
+              <ul><li>iOS &amp; Android apps<small>Swift, cross-platform, subscriptions &amp; in-app purchases</small></li><li>Custom software &amp; platforms<small>Dashboards, fleet systems, internal tools</small></li><li>AI features<small>Recommendations, audio &amp; data analysis</small></li></ul>
+            </div></div></div>
+          </div>
+          <div class="svc">
+            <button class="svc-row"><span class="svc-num">02</span><span class="svc-title">UI/UX Design</span><span class="svc-plus">+</span></button>
+            <div class="svc-panel"><div><div class="svc-inner"><span></span>
+              <p>This is our strength. We master the design of mobile apps and software in any industry, applying strategic business decisions to every screen so your users convert and stay.</p>
+              <ul><li>Research &amp; business analysis<small>USP, risk, the right tech stack</small></li><li>Prototypes &amp; user flows<small>Clickable, tested, developer-ready</small></li><li>Design systems<small>Consistent and scalable</small></li></ul>
+            </div></div></div>
+          </div>
+          <div class="svc">
+            <button class="svc-row"><span class="svc-num">03</span><span class="svc-title">Websites</span><span class="svc-plus">+</span></button>
+            <div class="svc-panel"><div><div class="svc-inner"><span></span>
+              <p>The most engaging websites: immersive effects, UI animations, creative scrolling and interactive 2D/3D experiences, like the one you're on. Fast, SEO-ready and yours to own, with no expensive builder lock-in.</p>
+              <ul><li>Interactive marketing sites<small>Animations, WebGL, motion</small></li><li>E-commerce &amp; memberships<small>Subscriptions, checkout, gated content</small></li><li>SEO &amp; cloud setup<small>Hosting, domains, analytics</small></li></ul>
+            </div></div></div>
+          </div>
+          <div class="svc">
+            <button class="svc-row"><span class="svc-num">04</span><span class="svc-title">MVP for Startups</span><span class="svc-plus">+</span></button>
+            <div class="svc-panel"><div><div class="svc-inner"><span></span>
+              <p>A budget-friendly path to market. We verify your business idea first, build a proof of concept, then scale what works, so you raise and launch with evidence instead of guesses.</p>
+              <ul><li>Discovery sprint<small>Validate the problem and audience</small></li><li>Clickable MVP<small>Pitch-ready and testable</small></li><li>Technology consulting<small>Cloud solutions and stack selection</small></li></ul>
+            </div></div></div>
+          </div>
+          <div class="svc">
+            <button class="svc-row"><span class="svc-num">05</span><span class="svc-title">Brand, Motion &amp; Growth</span><span class="svc-plus">+</span></button>
+            <div class="svc-panel"><div><div class="svc-inner"><span></span>
+              <p>A unique brand image that builds relationships with your customers, brought to life with 2D/3D motion and launched with digital marketing that reaches your niche wherever they are.</p>
+              <ul><li>Brand identity<small>Logo, color, voice</small></li><li>3D &amp; 2D motion design<small>Product films, App Store videos</small></li><li>Social &amp; digital marketing<small>Campaigns that grow and engage</small></li></ul>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process" style="padding-top:0">
+      <div class="wrap">
+        <span class="eyebrow reveal">How we work</span>
+        <h2 class="h-lg reveal" style="margin-top:14px">Idea → <span class="grad-text">App Store.</span></h2>
+        <div class="process" id="processEl">
+          <div class="process-line"><span id="processLine"></span></div>
+          <div class="step"><span class="step-dot">01</span><h4>Discover</h4><p>Business analysis, research and a clear roadmap. We pick the right stack and cut the risk before a line of code.</p><span class="dur">Strategy</span></div>
+          <div class="step"><span class="step-dot">02</span><h4>Design</h4><p>UX flows, UI and interactive prototypes you can click, test and show to investors.</p><span class="dur">UX/UI</span></div>
+          <div class="step"><span class="step-dot">03</span><h4>Build</h4><p>Agile development with weekly demos. You see real progress, not just status reports.</p><span class="dur">Engineering</span></div>
+          <div class="step"><span class="step-dot">04</span><h4>Launch &amp; grow</h4><p>App Store release, marketing assets and iteration on real user data.</p><span class="dur">Growth</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team" style="padding-top:0">
+      <div class="wrap">
+        <span class="eyebrow reveal">Our team · Worldwide</span>
+        <h2 class="h-lg reveal" style="margin-top:14px">A worldwide team of <span class="grad-text">engineers.</span></h2>
+        <p class="lead reveal" style="margin-top:20px">Our engineers and designers work from around the world, across time zones, so your project keeps moving while you sleep. And you always talk directly with the people building your product.</p>
+        <div class="team-grid">
+          <article class="eng reveal">
+            <div class="eng-top"><div class="eng-av">📱</div><div><span class="role">Mobile engineering</span><h3>iOS &amp; Android</h3></div></div>
+            <p>Native and cross-platform apps with subscriptions, push notifications and smooth animations.</p>
+            <div class="stack"><span>Swift</span><span>SwiftUI</span><span>Kotlin</span><span>React Native</span><span>Flutter</span></div>
+          </article>
+          <article class="eng reveal">
+            <div class="eng-top"><div class="eng-av">⚙️</div><div><span class="role">Backend &amp; cloud</span><h3>Full-stack engineers</h3></div></div>
+            <p>APIs, databases, dashboards and cloud infrastructure that scale with your users.</p>
+            <div class="stack"><span>Node.js</span><span>Python</span><span>Firebase</span><span>AWS</span><span>PostgreSQL</span></div>
+          </article>
+          <article class="eng reveal">
+            <div class="eng-top"><div class="eng-av">🧠</div><div><span class="role">AI &amp; data</span><h3>AI engineers</h3></div></div>
+            <p>Recommendations, audio and data analysis, and AI features that make your product smarter.</p>
+            <div class="stack"><span>TensorFlow</span><span>OpenAI / Claude APIs</span><span>librosa</span><span>Data pipelines</span></div>
+          </article>
+          <article class="eng reveal">
+            <div class="eng-top"><div class="eng-av">🎨</div><div><span class="role">Design</span><h3>UX/UI &amp; motion designers</h3></div></div>
+            <p>Research, user flows, interfaces and 2D/3D motion that make people love using your app.</p>
+            <div class="stack"><span>Figma</span><span>Prototyping</span><span>Design systems</span><span>3D &amp; motion</span></div>
+          </article>
+        </div>
+        <span class="status reveal">Working worldwide, across time zones · Taking on new projects now</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" style="padding-top:0">
+      <div class="wrap about-grid">
+        <div class="portrait-wrap reveal">
+          <div class="portrait" id="portrait"><img src="assets/img/gab.jpg" alt="Gabriela Ayala B., founder and CTO of MIND by GAB" loading="lazy"></div>
+          <div class="portrait-frame"></div>
+          <svg class="portrait-spin" viewBox="0 0 140 140" aria-hidden="true">
+            <defs><path id="circ" d="M70,70 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/></defs>
+            <text><textPath href="#circ">Tech warrior ✦ Founder ✦ CTO ✦ Miami ✦</textPath></text>
+          </svg>
+          <div class="portrait-badge"><b>Gabriela Ayala B.</b><small>Founder · CTO · Tech Warrior</small></div>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow reveal">Meet the founder</span>
+          <h2 class="h-lg reveal" style="margin:14px 0 26px">Hi, I'm <span class="grad-text">Gab.</span></h2>
+          <p class="reveal">I'm <strong>Gabriela Ayala B.</strong>, founder and CTO of MIND by GAB. Since <strong>2013</strong> our Miami studio has helped startups and companies turn ideas into apps, software and websites. I bring together <strong>business analysis, UX/UI design and engineering</strong>, so the person who understands your business is the same one who ships your product.</p>
+          <p class="reveal">I don't only build for clients. I build <strong>my own products</strong> too: HitBeatRun, an AI running system with a paying membership, and Pulse, an iOS app for the relationships that matter most. She is the author of <strong>Tech Warrior</strong> and is currently advancing her AI expertise through MIT Professional Education. Every lesson from launching, pricing and growing our own products goes straight into your project, which is how we build <strong>faster and more affordably</strong>.</p>
+          <a href="#start" class="btn btn-primary magnetic reveal" style="margin-top:14px">Talk to Gab <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="section" id="book">
+      <div class="wrap book-grid">
+        <div class="book-stage reveal" id="bookStage">
+          <div class="book" id="book3d">
+            <div class="book-cover"><img src="assets/img/tech-warrior.jpg" alt="Tech Warrior: How I hit rock bottom and technology was my shield, by Gabriela Ayala B."></div>
+            <div class="book-spine"></div>
+            <div class="book-pages"></div>
+          </div>
+          <div class="book-shadow"></div>
+        </div>
+        <div>
+          <span class="eyebrow reveal">The book</span>
+          <h2 class="h-lg reveal" style="margin:14px 0 22px">Tech <span class="grad-text">Warrior.</span></h2>
+          <p class="reveal" style="font-family:var(--display);font-weight:700;font-size:clamp(19px,1.8vw,24px);margin:-8px 0 16px;letter-spacing:-.02em">How I hit rock bottom and technology was my shield</p>
+          <p class="lead reveal">Gabriela's own story of turning to technology in her hardest moments. Building apps and software became her weapon to face every obstacle, and the book is written to inspire you to chase your goals with love and self-confidence.</p>
+          <ul class="feature-list reveal">
+            <li><span class="ic">📘</span><div><b>Written by our founder.</b> The story and mindset behind every product we build.</div></li>
+            <li><span class="ic">💜</span><div><b>An inspiring true story.</b> Doing what you love as a way to heal, grow and win.</div></li>
+            <li><span class="ic">🎓</span><div><b>Always learning.</b> Gabriela is currently in MIT Professional Education's Applied Agentic AI program.</div></li>
+          </ul>
+          <a href="mailto:mindbygab@gmail.com?subject=Tech%20Warrior%20book" class="btn btn-primary magnetic reveal" id="bookBtn">Get it on Amazon <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT BUILDER + CONTACT -->
+    <section class="section" id="start">
+      <div class="wrap">
+        <span class="eyebrow reveal">Start a project</span>
+        <h2 class="h-lg reveal" style="margin-top:14px">Let's talk about your idea<br>and make it a <span class="grad-text">success.</span></h2>
+
+        <div class="builder">
+          <div>
+            <div class="q reveal">
+              <span class="q-label">01 · What are we building?</span>
+              <div class="opts" data-q="type" data-single>
+                <button class="opt" data-v="Mobile app"><span class="e">📱</span>Mobile app</button>
+                <button class="opt" data-v="Website"><span class="e">🌐</span>Website</button>
+                <button class="opt" data-v="Custom software"><span class="e">⚙️</span>Custom software</button>
+                <button class="opt" data-v="MVP"><span class="e">🚀</span>Startup MVP</button>
+                <button class="opt" data-v="AI product"><span class="e">🧠</span>AI product</button>
+                <button class="opt" data-v="Branding"><span class="e">🎨</span>Branding</button>
+              </div>
+            </div>
+            <div class="q reveal">
+              <span class="q-label">02 · What do you need?</span>
+              <div class="opts" data-q="needs">
+                <button class="opt" data-v="Strategy">Strategy</button>
+                <button class="opt" data-v="UX/UI design">UX/UI design</button>
+                <button class="opt" data-v="Development">Development</button>
+                <button class="opt" data-v="Subscriptions / payments">Subscriptions / payments</button>
+                <button class="opt" data-v="AI features">AI features</button>
+                <button class="opt" data-v="Animations / 3D">Animations / 3D</button>
+                <button class="opt" data-v="Marketing">Marketing</button>
+              </div>
+            </div>
+            <div class="q reveal">
+              <span class="q-label">03 · Where are you?</span>
+              <div class="opts" data-q="stage" data-single>
+                <button class="opt" data-v="Just an idea">💡 Just an idea</button>
+                <button class="opt" data-v="Have designs">✏️ Have designs</button>
+                <button class="opt" data-v="Have a product">📦 Have a product</button>
+                <button class="opt" data-v="Need to scale">📈 Need to scale</button>
+              </div>
+            </div>
+            <div class="q reveal">
+              <span class="q-label">04 · When do you want to launch?</span>
+              <div class="opts" data-q="time" data-single>
+                <button class="opt" data-v="ASAP">ASAP</button>
+                <button class="opt" data-v="1–3 months">1–3 months</button>
+                <button class="opt" data-v="3–6 months">3–6 months</button>
+                <button class="opt" data-v="Flexible">Flexible</button>
+              </div>
+            </div>
+          </div>
+          <aside class="summary reveal">
+            <h4>Your project brief</h4>
+            <p class="form-note" style="margin:0">Pick a few options and we'll add them to your message.</p>
+            <div class="summary-items">
+              <div><span>Building</span><b id="sType">—</b></div>
+              <div><span>Needs</span><b id="sNeeds">—</b></div>
+              <div><span>Stage</span><b id="sStage">—</b></div>
+              <div><span>Launch</span><b id="sTime">—</b></div>
+            </div>
+            <div class="meter-label"><span>Brief completeness</span><span id="meterPct">0%</span></div>
+            <div class="meter"><span id="meter"></span></div>
+            <a href="#contact" class="btn btn-primary magnetic" style="margin-top:20px;width:100%;justify-content:center">Continue to details <span class="arrow">→</span></a>
+          </aside>
+        </div>
+
+        <div class="contact-grid" id="contact" style="margin-top:clamp(70px,9vw,120px)">
+          <div>
+            <h3 class="h-md reveal">Fill this form and<br>we will <span class="grad-text">call you back.</span></h3>
+            <div class="contact-info reveal">
+              <a href="mailto:mindbygab@gmail.com" data-cursor="Email"><span class="ic">✉</span>mindbygab@gmail.com</a>
+              <a href="tel:+17866817182" data-cursor="Call"><span class="ic">☎</span>786-681-7182</a>
+              <div><span class="ic">⌖</span>Miami, FL</div>
+            </div>
+          </div>
+          <form class="form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field"><input id="fName" name="name" placeholder=" " required><label for="fName">Full name*</label></div>
+              <div class="field"><input id="fEmail" name="email" type="email" placeholder=" " required><label for="fEmail">Email address*</label></div>
+            </div>
+            <div class="field"><input id="fCompany" name="company" placeholder=" "><label for="fCompany">Company</label></div>
+            <div class="field"><textarea id="fMsg" name="message" placeholder=" " required></textarea><label for="fMsg">How can we help you?*</label></div>
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+            <button class="btn btn-primary magnetic" type="submit" id="formBtn" style="justify-content:center">Send message <span class="arrow">→</span></button>
+            <p class="form-note">Your message goes straight to our inbox. We reply within one business day.</p>
+            <div class="form-ok" id="formOk">Thank you! Your submission has been received. We'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-cta">
+        <span class="eyebrow">Have an idea?</span><br>
+        <a href="#start" class="footer-big" id="footerBig" data-cursor="Let's go">Let's build your app</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> MIND by GAB · Miami, FL</span>
+        <nav><a href="#projects">Projects</a><a href="#services">Services</a><a href="#team">Team</a><a href="#about">About</a><a href="#book">Tech Warrior book</a><a href="https://hitbeatrun.com" target="_blank" rel="noopener">HitBeatRun ↗</a><a href="mailto:mindbygab@gmail.com">Email</a></nav>
+        <a href="#top" class="to-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- project modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-bg" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-media"><img id="mImg" src="" alt=""></div>
+      <div class="modal-body">
+        <span class="eyebrow" id="mMeta"></span>
+        <h3 id="mTitle"></h3>
+        <div class="product-meta" id="mTags"></div>
+        <div id="mText"></div>
+        <a href="#start" class="btn btn-primary" data-close style="margin-top:16px">Start something like this <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
